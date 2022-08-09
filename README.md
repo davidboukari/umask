@@ -1,4 +1,23 @@
 # umask
+
+* Set Default values
+```
+sudo vim /etc/login.defs
+USERGROUPS_ENAB yes => change to USERGROUPS_ENAB no
+
+ERASECHAR   0177
+KILLCHAR    025
+UMASK       027 => change the value
+
+To set up a specific value for a user just add in 
+cat<<EOF>> ~/.profile
+umask 022
+EOF
+
+
+```
+
+
 ```
 right max
 file: 666
