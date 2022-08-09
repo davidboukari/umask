@@ -1,6 +1,7 @@
 # umask
+* https://askubuntu.com/questions/805862/how-to-change-umask-mode-permanently
 
-* Set Default values
+## Set Default values
 ```
 sudo vim /etc/login.defs
 USERGROUPS_ENAB yes => change to USERGROUPS_ENAB no
@@ -13,11 +14,9 @@ To set up a specific value for a user just add in
 cat<<EOF>> ~/.profile
 umask 022
 EOF
-
-
 ```
 
-
+## Examples
 ```
 right max
 file: 666
